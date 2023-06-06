@@ -1,0 +1,45 @@
+
+.container {
+  width: 260px;
+  height: 260px;
+  background: lightgray;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.container h3{
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.container dt {
+  color: #0c5288;
+  font-size: 1em;
+  font-weight: 700;
+  width: 170px;
+}
+
+.container dd {
+  margin-left: 0;
+}
+
+.txt-01, .txt-02 {
+  font-size: 0.8em;
+  line-height: 21px;
+  width: 170px;
+}
+
+.txt-01, .title-01 {
+  float: right;
+}
+
+.txt-02, .title-02 {
+  float: left;
+  margin-right: 10px;
+}
+
+.txt-01 {
+  margin-bottom: 50px;
+}
