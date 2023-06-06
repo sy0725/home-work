@@ -3,7 +3,7 @@
 
 .box1{
   
-  font-size: 17px;
+  font-size: 15px;
   max-width: 250px;
   max-height: 37px;
   background:lightgrey url(./image/validation_icon\ 2.png) no-repeat 15px;
@@ -12,13 +12,15 @@
   border-radius: 20px;
   margin-bottom: 10px;
   text-align: center;
+  padding-left: 0px;
+
 }
 
 
 
 
 .box2{
-  font-size: 17px;
+  font-size: 15px;
   max-width: 250px;
   max-height: 37px;
   background:lightgrey url(./image/validation_icon\ 2.png) no-repeat 15px;
@@ -27,4 +29,6 @@
   border-radius: 20px;
   margin-bottom: 10px;
   text-align:center;
+  padding-left: 0px;
+  
 }
