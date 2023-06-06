@@ -1,0 +1,30 @@
+
+
+
+.box1{
+  
+  font-size: 17px;
+  max-width: 250px;
+  max-height: 37px;
+  background:lightgrey url(./image/validation_icon\ 2.png) no-repeat 15px;
+  padding: 5px 5px;
+  list-style: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+
+
+.box2{
+  font-size: 17px;
+  max-width: 250px;
+  max-height: 37px;
+  background:lightgrey url(./image/validation_icon\ 2.png) no-repeat 15px;
+  padding: 5px 5px;
+  list-style: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-align:center;
+}
