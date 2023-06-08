@@ -1,0 +1,119 @@
+
+
+.entire {
+  width: 244px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #ED552F 0%, #E8852E 100%);
+  box-shadow: 5px 5px 0 #AAAAAA;
+  padding: 12px;
+}
+
+
+h1 {
+  font-size: 15px;
+  color: yellow;
+}
+
+
+.little {
+  background: white;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+
+.small-01 {
+  position: relative;
+
+}
+
+label {
+  font-size: 14px;
+  width: 56px;
+  display: inline-block;
+}
+
+input {
+  width: 90px;
+}
+
+.login {
+ padding-bottom: 4px;
+}
+
+
+
+
+
+
+
+.login-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 58px;
+  height: 57px;
+  background: #ED552F;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  color: white;
+  border-style: hidden;
+}
+
+
+
+.small-02 {
+  margin-top: 20px;
+  border-top: 1px solid lightgrey;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+
+
+
+  .item1 {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .item2 {
+    font-size: 13px;
+    margin-left: 16px;
+    padding: 8px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ul {
+  list-style: none;
+  width: 220px;
+}
+
+.li-01 {
+  float: left;
+  width: 62px;
+}
+
+.li-02 {
+  width: 125px;
+  float: right;
+  margin-right: 25px;
+} */
+
