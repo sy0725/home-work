@@ -2,10 +2,10 @@
 
 **Mission-04**
 
-- Subject
-- Markup
-- CSS
-- Result
+- [Subject](#subject)
+- [Markup](#markup)
+- [CSS](#CSS)
+- [Result](#result)
 
 
 ## Subject
@@ -55,11 +55,10 @@ figma 시안을 구현한 결과물 (grid 활용)
 1번째 방법
 
 
-1. container 를 섹션으로 묶고 5개로 나눠주었습니다. <br> (head, more, line, img, site)
+1. container 를 섹션으로 묶고 4개로 나눠주었습니다. <br> (head, more, img, site)
 
-2. 5개 요소 중 line 이라는 class name 주어 그라데이션 line을 처리했습니다.
 
-3. 5개에 class name을 주고 나눈 5개의 요소에 값을 넣어 주었습니다.
+2. 4개에 class name을 주고 나눈 5개의 요소에 값을 넣어 주었습니다.
 
 
 2번째 방법
@@ -68,7 +67,7 @@ line 요소를 주석으로 처리하고
 css에 가상 클래스를 주어 line을 처리했습니다.
 
 
-##CSS
+## CSS
 
 ```CSS
 body {
@@ -186,10 +185,6 @@ h3{
 }
 
 
-/* 플러스 기호랑 캡션 위치 , 리뉴얼 아래 공간 */
-
-
-
 
 /* 가상요소 */
 
@@ -209,7 +204,7 @@ top: 33px;
 
 1번째 방법
 
-주석 처리가 된 line을 풀고 가상요소를 주석처리를 해도 똑같이 출력 됩니다.
+주석 처리가 된 HTML,CSS line을 풀고 가상요소를 주석처리를 해도 똑같이 출력 됩니다.
 
 
 2번째 방법
@@ -219,60 +214,6 @@ top: 33px;
 
 ## Result
 
-<!DOCTYPE html>
-<html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard.css" />
-  <link rel="stylesheet" href="./grid.css" />
-  <title>그리드 과제</title>
-</head>
-<body>
-  
-<section class="container">
 
-  <h2 class="head">새소식</h2>
-  <a href="0" class="more"><img src="./image/Union.png" class="plus"><span>더보기</span></a>
-  
-  <div class="line"></div>
-
-  <figure class="img">
-    <img class="shadow" src="./image/news.png" alt="W3C 리뉴얼 홈페이지" />
-    <figcaption>W3C 리뉴얼</figcaption>
-  </figure>
-
-
-  <div class="site">
-    <h3>W3C 사이트가 리뉴얼 되었습니다</h3>
-    <p class="date">2022.07.18</p>
-    <p class="note">디자인 및 다양한 view 환경을 고려하여 구성 되어 있으며, 기존보다 최신 정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어 있습니다.</p>
-  </div>
-</section>
-
-
-
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![결과](./image/final.jpg)
 
