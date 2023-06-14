@@ -1,0 +1,114 @@
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+  margin: 50px;   /* 임시 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: linear-gradient(180deg, #CCCCCC 0%, #EEEEEE 100%);
+  border: 1px solid lightgrey;
+  width: 190px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "head more"
+  "site site";
+  gap: 8px;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+
+.head {          /* grid item */
+ font-size: 15px;
+  grid-area: head;
+}
+
+.head__site {
+  color: orangered;
+}
+
+
+.more {                      /* grid item */
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  grid-area: more;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.more__plus {
+  width: 16px;
+  padding-right: 6px;
+}
+
+
+
+
+
+
+.style {
+  background: url(./image/rank.png) no-repeat;
+  
+}
+
+
+.styleList1 {
+  background-position: 140px 0;
+
+
+}
+
+.styleList2 {
+  background-position: 140px -43px;
+
+}
+
+.styleList3 {
+  background-position: 140px -21px;
+}
+
+.styleList4 {
+  background-position: 140px 0;
+}
+
+
+
+
+.site {
+  font-size: 11px;
+  grid-area: site;
+  line-height: 170%;
+  
+  list-style: none;
+  counter-reset: list-counter;
+}
+
+
+.style {
+  counter-increment: list-counter;
+}
+
+
+/* 문제는 따로 지정이 안된다. */
+
+li::before {
+  content:counter(list-counter);
+  width: 13px;
+  height: 17px;
+  background: #A3A3A3;
+  border-radius: 5px;
+  font-size: 13px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+}
