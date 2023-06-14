@@ -63,22 +63,19 @@ body {
 
 
 .styleList1 {
-  background-position: 140px 0;
-
-
+  background-position: 140px 4px;
 }
-
+/* 정중앙까지 18px */
 .styleList2 {
-  background-position: 140px -43px;
-
+  background-position: 140px -41px;
 }
 
 .styleList3 {
-  background-position: 140px -21px;
+  background-position: 140px -18px;
 }
 
 .styleList4 {
-  background-position: 140px 0;
+  background-position: 140px 4px;
 }
 
 
@@ -88,9 +85,8 @@ body {
   font-size: 11px;
   grid-area: site;
   line-height: 170%;
-  
   list-style: none;
-  counter-reset: list-counter;
+  /* counter-reset: list-counter; */
 }
 
 
@@ -103,7 +99,7 @@ body {
 
 li::before {
   content:counter(list-counter);
-  width: 13px;
+  width: 17px;
   height: 17px;
   background: #A3A3A3;
   border-radius: 5px;
