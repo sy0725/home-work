@@ -1,7 +1,5 @@
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-
-  margin: 50px;   /* 임시 */
 }
 
 * {
@@ -13,37 +11,35 @@ body {
 .container {
   background: linear-gradient(180deg, #CCCCCC 0%, #EEEEEE 100%);
   border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 12px;
   width: 190px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: auto;
+  gap: 8px;
   grid-template-areas: 
   "head more"
   "site site";
-  gap: 8px;
-  padding: 12px;
-  border-radius: 5px;
 }
 
-
-.head {          /* grid item */
- font-size: 15px;
-  grid-area: head;
+.head {         
+font-size: 15px;
+grid-area: head;
 }
 
 .head__site {
   color: orangered;
 }
 
-
-.more {                      /* grid item */
+.more {                     
   color: black;
   font-size: 14px;
-  text-decoration: none;
-  grid-area: more;
-  display: flex;
-  align-items: center;
   padding-left: 20px;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  grid-area: more;
 }
 
 .more__plus {
@@ -51,21 +47,23 @@ body {
   padding-right: 6px;
 }
 
-
-
-
-
+.site {
+  font-size: 11px;
+  grid-area: site;
+  line-height: 170%;
+  list-style: none;
+  counter-reset: list-counter;
+}
 
 .style {
   background: url(./image/rank.png) no-repeat;
-  
+  counter-increment: list-counter;
 }
-
 
 .styleList1 {
   background-position: 140px 4px;
 }
-/* 정중앙까지 18px */
+
 .styleList2 {
   background-position: 140px -41px;
 }
@@ -78,24 +76,6 @@ body {
   background-position: 140px 4px;
 }
 
-
-
-
-.site {
-  font-size: 11px;
-  grid-area: site;
-  line-height: 170%;
-  list-style: none;
-  /* counter-reset: list-counter; */
-}
-
-
-.style {
-  counter-increment: list-counter;
-}
-
-
-/* 문제는 따로 지정이 안된다. */
 
 li::before {
   content:counter(list-counter);
